@@ -1,6 +1,5 @@
-
 import 'package:flutter/material.dart';
-import 'package:tilbil/src/app_widgets/TextForm.dart';
+import 'package:tilbil/src/app_widgets/inputs/text_form_field.dart';
 
 class AuthenticationView extends StatelessWidget {
   const AuthenticationView({super.key});
@@ -15,9 +14,7 @@ class AuthenticationView extends StatelessWidget {
           Container(
             height: 400,
             color: const Color(0xff85D9FD),
-            child: const Center(
-              child: Textfieldwidget(),
-            ),
+            child: const Center(),
           ),
         ],
       ),
