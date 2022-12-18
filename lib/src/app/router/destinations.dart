@@ -9,7 +9,7 @@ const List<NavigationDestination> destinations = [
   NavigationDestination(
     label: 'Категориялар',
     icon: Icon(Icons.mail_outlined),
-    route: '/menu',
+    route: '/category',
   ),
   NavigationDestination(
     label: 'Жомок',

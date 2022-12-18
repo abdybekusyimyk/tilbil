@@ -1,11 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_svg/flutter_svg.dart';
 import 'package:tilbil/src/app_constants/app_spaces.dart';
 
 class InfoWidget extends StatelessWidget {
   const InfoWidget({
+    required this.icon,
+    required this.text,
     super.key,
   });
+  final Widget icon;
+  final String text;
 
   @override
   Widget build(BuildContext context) {
@@ -15,11 +18,11 @@ class InfoWidget extends StatelessWidget {
           padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
           child: Row(
             children: [
-              SvgPicture.asset('assets/icons/biz.svg'),
+              icon,
               AppSpace.sizedW25,
-              const Text(
-                'Биз жөнүндө',
-                style: TextStyle(fontSize: 20),
+              Text(
+                text,
+                style: const TextStyle(fontSize: 20),
               ),
             ],
           ),

@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:tilbil/src/app/router/root.dart';
+import 'package:tilbil/src/modules/category/view/category_page.dart';
 import 'package:tilbil/src/modules/home/home.dart';
 import 'package:tilbil/src/modules/menu/view/menu_page.dart';
 
@@ -20,6 +21,17 @@ class AppRouter {
             key: scaffoldKey,
             selectedIndex: 0,
             child: HomePage(),
+          ),
+        ),
+      ),
+      GoRoute(
+        path: '/category',
+        pageBuilder: (context, state) => const MaterialPage<void>(
+          key: pageKey,
+          child: RootLayout(
+            key: scaffoldKey,
+            selectedIndex: 1,
+            child: CategoryPage(),
           ),
         ),
       ),
