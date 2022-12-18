@@ -8,7 +8,7 @@ class AuthenticationPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return BlocProvider(
-      create: (_) => AuthenticationCubit( ),
+      create: (_) => AuthenticationCubit(),
       child: const AuthenticationView(),
     );
   }

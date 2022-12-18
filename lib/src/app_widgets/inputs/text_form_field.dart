@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 
 class AppTextFormFieldWidget extends StatelessWidget {
-
   const AppTextFormFieldWidget({
     super.key,
     required this.controller,
