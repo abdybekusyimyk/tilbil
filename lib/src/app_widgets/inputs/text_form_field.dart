@@ -1,24 +1,6 @@
 import 'package:flutter/material.dart';
 
 class AppTextFormFieldWidget extends StatelessWidget {
-  final TextEditingController controller;
-  final String? hintText;
-  final String? labelText;
-  final Widget? prefix;
-  final Widget? prefixixIcon;
-  final String? prefixText;
-  final Widget? suffix;
-  final Widget? suffixIcon;
-  final String? Function(String?)? validator;
-  // ignore: inference_failure_on_function_return_type
-  final Function(String)? onChanged;
-  final TextInputType? keyboardType;
-  final bool? autofocus;
-  final bool obscureText;
-  final TextStyle? labelStyle;
-  final int? maxLines;
-  final TextStyle? hintStyle;
-  final InputBorder? border;
 
   const AppTextFormFieldWidget({
     super.key,
@@ -40,6 +22,24 @@ class AppTextFormFieldWidget extends StatelessWidget {
     this.hintStyle,
     this.border,
   });
+  final TextEditingController controller;
+  final String? hintText;
+  final String? labelText;
+  final Widget? prefix;
+  final Widget? prefixixIcon;
+  final String? prefixText;
+  final Widget? suffix;
+  final Widget? suffixIcon;
+  final String? Function(String?)? validator;
+  // ignore: inference_failure_on_function_return_type
+  final Function(String)? onChanged;
+  final TextInputType? keyboardType;
+  final bool? autofocus;
+  final bool obscureText;
+  final TextStyle? labelStyle;
+  final int? maxLines;
+  final TextStyle? hintStyle;
+  final InputBorder? border;
 
   @override
   Widget build(BuildContext context) {
