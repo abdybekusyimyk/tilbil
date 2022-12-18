@@ -8,6 +8,7 @@
 import 'package:flutter/material.dart';
 import 'package:tilbil/src/l10n/l10n.dart';
 import 'package:tilbil/src/modules/authentication/authentication.dart';
+import 'package:tilbil/src/modules/fairy_tales/view/fairy_tales_page.dart';
 import 'package:tilbil/src/modules/menu/view/menu_page.dart';
 
 class App extends StatelessWidget {
@@ -25,7 +26,8 @@ class App extends StatelessWidget {
       ),
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
-      home: const MenuPage(),
+      // home: const MenuPage(),
+      home: FairyTalesPage(),
     );
   }
 }

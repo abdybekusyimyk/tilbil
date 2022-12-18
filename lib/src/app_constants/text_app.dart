@@ -49,7 +49,8 @@ class AppText {
 // Alert Dialog messages
   static const String goodLuck = 'Ийгилик!';
   static const String congratulations = 'Куттуктайбыз!';
-  static const String validatorPasswordMessage = 'Сыр сөз 8 белгиден кем болбошу шарт!';
+  static const String validatorPasswordMessage =
+      'Сыр сөз 8 белгиден кем болбошу шарт!';
   static const String validatorMessage = 'Бош болбошу керек!';
   static const String otpDurationText = 'коддун мөөнөтү';
   static const String disconnected = 'Үзгүлтүккө учуратуу';
@@ -185,5 +186,17 @@ class AppText {
 
   // Error
   static const String error = 'Error';
+  // jomoktor
+  static const String jomoktor = 'Жомоктор';
+  static const String akylduubala = 'Акылдуу бала';
+  static const String altynkush = 'Алтын куш ';
+  static const String chypalakbala = 'Чыпалак бала';
+  static const String tulkuturna = 'Тулку менен турна';
+  static const String bulbul = 'Булбул';
+  static const String myshykchychkan = 'Мышык менен чычкан';
+  static const String jyldyzdar = 'Жылдыздар эмнеге учушат';
+
+
+
 
 }

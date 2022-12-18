@@ -91,4 +91,19 @@ class AppTextStyles {
     color: AppColors.gray,
     fontWeight: FontWeight.w400,
   );
+  static const TextStyle robotoblue13w400 = TextStyle(
+    fontSize: 50,
+    color: AppColors.blueT,
+    fontWeight: FontWeight.w400,
+  );
+  static const TextStyle robotobluee13w400 = TextStyle(
+    fontSize: 20,
+    color: AppColors.bluee,
+    fontWeight: FontWeight.w400,
+  );
+  static const TextStyle robotoblackk13w400 = TextStyle(
+    fontSize: 1,
+    color: AppColors.blavkk,
+    fontWeight: FontWeight.w400,
+  );
 }
