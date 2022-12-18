@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:tilbil/src/app/theme/theme.dart';
 import 'package:tilbil/src/app_constants/app_spaces.dart';
+import 'package:tilbil/src/app_widgets/others/container_menu.dart';
+import 'package:tilbil/src/app_widgets/others/scroll_widget.dart';
 
 class HomeView extends StatelessWidget {
   const HomeView({super.key});
@@ -133,67 +135,6 @@ class HomeView extends StatelessWidget {
             ),
           ],
         ),
-      ),
-    );
-  }
-}
-
-class ContainerMenu extends StatelessWidget {
-  const ContainerMenu({
-    required this.imageName,
-    required this.name,
-    required this.style,
-    super.key,
-  });
-  final String imageName;
-  final String name;
-  final TextStyle style;
-
-  @override
-  Widget build(BuildContext context) {
-    return Expanded(
-      child: DecoratedBox(
-        decoration: BoxDecoration(
-          color: Colors.white,
-          borderRadius: BorderRadius.circular(10),
-          border: Border.all(color: const Color(0xFF85D9FD)),
-        ),
-        child: Padding(
-          padding: const EdgeInsets.all(15),
-          child: Column(
-            children: [
-              Image.asset(
-                imageName,
-                height: 90,
-              ),
-              AppSpace.sized5,
-              Text(
-                name,
-                style: style,
-              ),
-            ],
-          ),
-        ),
-      ),
-    );
-  }
-}
-
-class ScrollWidget extends StatelessWidget {
-  const ScrollWidget({
-    required this.isCheck,
-    super.key,
-  });
-  final bool isCheck;
-
-  @override
-  Widget build(BuildContext context) {
-    return Container(
-      width: 10,
-      height: 10,
-      decoration: BoxDecoration(
-        color: isCheck ? const Color(0xFF68c052) : const Color(0xFFd9d9d9),
-        borderRadius: BorderRadius.circular(20),
       ),
     );
   }
