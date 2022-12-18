@@ -7,6 +7,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:tilbil/src/l10n/l10n.dart';
+import 'package:tilbil/src/modules/fairy_tales/view/fairy_tales_view.dart';
 
 import 'package:tilbil/src/modules/home/home.dart';
 
@@ -27,7 +28,7 @@ class App extends StatelessWidget {
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
 
-      home: const HomePage(),
+      home: const FairyTalesView(),
 
     );
   }
