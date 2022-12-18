@@ -14,6 +14,7 @@ dependencies:
   flutter_bloc: ^8.1.1
   flutter_localizations:
     sdk: flutter
+  flutter_svg: ^1.1.6
   go_router: ^5.2.4
   intl: ^0.17.0
   meta: ^1.8.0
@@ -29,6 +30,11 @@ flutter:
   uses-material-design: true
   generate: true
 
+
+
   assets:
    - assets/images/
    - assets/icons/
+
+
+

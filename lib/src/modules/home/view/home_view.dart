@@ -10,6 +10,7 @@ class HomeView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       backgroundColor: const Color(0xFFe2fdfd),
       body: SingleChildScrollView(
@@ -138,5 +139,6 @@ class HomeView extends StatelessWidget {
         ),
       ),
     );
+
   }
 }
