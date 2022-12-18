@@ -9,12 +9,12 @@ const List<NavigationDestination> destinations = [
   NavigationDestination(
     label: 'Категориялар',
     icon: Icon(Icons.mail_outlined),
-    route: '/kategoria',
+    route: '/menu',
   ),
   NavigationDestination(
     label: 'Жомок',
     icon: Icon(Icons.abc),
-    route: '/jomok',
+    route: '/menu',
   ),
   NavigationDestination(
     label: 'Меню',
