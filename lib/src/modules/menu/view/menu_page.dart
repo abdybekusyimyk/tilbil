@@ -4,7 +4,7 @@ import 'package:tilbil/src/modules/menu/cubit/menu_cubit.dart';
 import 'package:tilbil/src/modules/menu/view/menu_view.dart';
 
 class MenuPage extends StatelessWidget {
-  const MenuPage({Key? key}) : super(key: key);
+  const MenuPage({super.key});
 
   @override
   Widget build(BuildContext context) {
