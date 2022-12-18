@@ -27,11 +27,21 @@ class InfoWidget extends StatelessWidget {
             ],
           ),
         ),
-        const Divider(
-          thickness: 1.2,
-          color: Colors.blue,
-        )
+        AppDivider.divider
       ],
     );
   }
+}
+
+class AppDivider {
+  AppDivider._();
+  static const Divider divider = Divider(
+    thickness: 1,
+    color: Colors.black,
+    
+  );
+    static const Divider divider2 = Divider(
+    thickness: 1,
+    color: Colors.black,
+  );
 }

@@ -8,6 +8,7 @@
 import 'package:flutter/material.dart';
 import 'package:tilbil/src/app/router/app_router.dart';
 import 'package:tilbil/src/l10n/l10n.dart';
+import 'package:tilbil/src/modules/fairy_tales/view/fairy_tales_view.dart';
 
 class App extends StatelessWidget {
   const App({super.key});
@@ -26,7 +27,9 @@ class App extends StatelessWidget {
       ),
       localizationsDelegates: AppLocalizations.localizationsDelegates,
       supportedLocales: AppLocalizations.supportedLocales,
+
       routerConfig: router,
+
     );
   }
 }
