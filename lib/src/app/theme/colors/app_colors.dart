@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 
 class AppColors {
+  static var bluee;
+
   const AppColors._();
 
   static const Color mainColor = Color(0xff01A560);
