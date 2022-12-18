@@ -9,7 +9,7 @@ class TextButtonWidget extends StatelessWidget {
     this.colorBtn,
   });
 
-  final Function()? onPressed;
+  final void Function() onPressed;
   final String textButton;
   final double? fontSize;
   final Color? colorBtn;
