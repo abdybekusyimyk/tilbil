@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import '../theme.dart';
+import 'package:tilbil/src/app/theme/theme.dart';
 
 class AppTextStyles {
   const AppTextStyles._();
@@ -9,6 +9,24 @@ class AppTextStyles {
     fontSize: 24,
     color: AppColors.black,
     fontWeight: FontWeight.w600,
+  );
+  static const TextStyle poppinsText24w600 = TextStyle(
+    fontSize: 18,
+    color: Color(0xFF0E5EA3),
+    // fontWeight: FontWeight.w600,
+    fontFamily: 'CormorantInfant',
+  );
+  static const TextStyle poppinsText14w600 = TextStyle(
+    fontSize: 14,
+    color: Color(0xFF0E5EA3),
+    // fontWeight: FontWeight.w600,
+    fontFamily: 'CormorantInfant',
+  );
+  static const TextStyle poppinsText12w600 = TextStyle(
+    fontSize: 12,
+    color: Color(0xFF0E5EA3),
+    // fontWeight: FontWeight.w600,
+    fontFamily: 'CormorantInfant',
   );
   static const TextStyle poppinsBlack18w600 = TextStyle(
     fontSize: 18,

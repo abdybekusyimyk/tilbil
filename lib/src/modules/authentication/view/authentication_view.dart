@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:tilbil/src/app_widgets/inputs/text_form_field.dart';
 
 class AuthenticationView extends StatelessWidget {
   const AuthenticationView({super.key});
