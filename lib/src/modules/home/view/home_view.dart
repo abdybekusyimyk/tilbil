@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:tilbil/src/app/theme/theme.dart';
 import 'package:tilbil/src/app_constants/app_spaces.dart';
+import 'package:tilbil/src/app_constants/text_app.dart';
 import 'package:tilbil/src/app_widgets/others/container_menu.dart';
 import 'package:tilbil/src/app_widgets/others/scroll_widget.dart';
 
@@ -21,7 +22,7 @@ class HomeView extends StatelessWidget {
                 children: [
                   AppSpace.sizedW20,
                   const Text(
-                    'Салам, Айнура',
+                    AppText.welcomeTextName,
                     style: AppTextStyles.poppinsText24w600,
                   ),
                   AppSpace.sizedW70,
@@ -55,7 +56,7 @@ class HomeView extends StatelessWidget {
                           ),
                           const Expanded(
                             child: Text(
-                              'Балаңыздын кыргыз тили биз менен байысын ',
+                              AppText.containerText,
                               style: AppTextStyles.poppinsText24w600,
                             ),
                           ),
@@ -89,19 +90,19 @@ class HomeView extends StatelessWidget {
                         children: const [
                           ContainerMenu(
                             imageName: 'assets/images/jomoktor.png',
-                            name: 'Жомоктор',
+                            name: AppText.containerMenu1,
                             style: AppTextStyles.poppinsText14w600,
                           ),
                           AppSpace.sizedW15,
                           ContainerMenu(
                             imageName: 'assets/images/janylmachtar.png',
-                            name: 'Жаңылмачтар',
+                            name: AppText.containerMenu2,
                             style: AppTextStyles.poppinsText12w600,
                           ),
                           AppSpace.sizedW15,
                           ContainerMenu(
                             imageName: 'assets/images/yrlar.png',
-                            name: 'Ырлар',
+                            name: AppText.containerMenu3,
                             style: AppTextStyles.poppinsText14w600,
                           ),
                         ],
@@ -111,19 +112,19 @@ class HomeView extends StatelessWidget {
                         children: const [
                           ContainerMenu(
                             imageName: 'assets/images/sabaktar.png',
-                            name: 'Сабактар',
+                            name: AppText.containerMenu4,
                             style: AppTextStyles.poppinsText14w600,
                           ),
                           AppSpace.sizedW15,
                           ContainerMenu(
                             imageName: 'assets/images/makaldar.png',
-                            name: 'Макалдар',
+                            name: AppText.containerMenu5,
                             style: AppTextStyles.poppinsText14w600,
                           ),
                           AppSpace.sizedW15,
                           ContainerMenu(
                             imageName: 'assets/images/tabyshmak.png',
-                            name: 'Табышмактар',
+                            name: AppText.containerMenu6,
                             style: AppTextStyles.poppinsText12w600,
                           ),
                         ],
