@@ -6,6 +6,7 @@ class AppTextFormFieldWidget extends StatelessWidget {
     required this.controller,
     this.hintText,
     this.labelText,
+    this.minLines,
     this.prefix,
     this.prefixixIcon,
     this.prefixText,
@@ -20,8 +21,10 @@ class AppTextFormFieldWidget extends StatelessWidget {
     this.maxLines,
     this.hintStyle,
     this.border,
+    this.contentPadding,
   });
   final TextEditingController controller;
+  final int? minLines;
   final String? hintText;
   final String? labelText;
   final Widget? prefix;
@@ -39,6 +42,7 @@ class AppTextFormFieldWidget extends StatelessWidget {
   final int? maxLines;
   final TextStyle? hintStyle;
   final InputBorder? border;
+  final EdgeInsetsGeometry? contentPadding;
 
   @override
   Widget build(BuildContext context) {
@@ -57,6 +61,7 @@ class AppTextFormFieldWidget extends StatelessWidget {
         prefixIcon: prefixixIcon,
         suffix: suffix,
         suffixIcon: suffixIcon,
+        contentPadding: contentPadding,
       ),
       onChanged: onChanged,
       validator: validator,

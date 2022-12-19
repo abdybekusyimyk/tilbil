@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:tilbil/src/modules/category/logic/category_cubit.dart';
+import 'package:tilbil/src/modules/category/cubit/category_cubit.dart';
 import 'package:tilbil/src/modules/category/view/category_view.dart';
 
 class CategoryPage extends StatelessWidget {

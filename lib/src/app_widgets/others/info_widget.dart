@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:tilbil/src/app/theme/colors/app_colors.dart';
 import 'package:tilbil/src/app_constants/app_spaces.dart';
+import 'package:tilbil/src/app_widgets/others/divi_line.dart';
 
 class InfoWidget extends StatelessWidget {
   const InfoWidget({
@@ -27,21 +29,11 @@ class InfoWidget extends StatelessWidget {
             ],
           ),
         ),
-        AppDivider.divider
+        const DiviLine(
+          color: AppColors.black,
+          thickness: 1.2,
+        )
       ],
     );
   }
-}
-
-class AppDivider {
-  AppDivider._();
-  static const Divider divider = Divider(
-    thickness: 1,
-    color: Colors.black,
-    
-  );
-    static const Divider divider2 = Divider(
-    thickness: 1,
-    color: Colors.black,
-  );
 }
