@@ -2,39 +2,56 @@ import 'package:flutter/material.dart';
 import 'package:tilbil/src/app/theme/theme.dart';
 import 'package:tilbil/src/app_constants/app_spaces.dart';
 import 'package:tilbil/src/app_constants/text_app.dart';
+import 'package:tilbil/src/app_widgets/inputs/text_form_field.dart';
 import 'package:tilbil/src/app_widgets/others/container_menu.dart';
 import 'package:tilbil/src/app_widgets/others/scroll_widget.dart';
 
 class HomeView extends StatelessWidget {
-  const HomeView({super.key});
+  HomeView({super.key});
+
+  final controller = TextEditingController();
 
   @override
   Widget build(BuildContext context) {
-
     return Scaffold(
       backgroundColor: const Color(0xFFe2fdfd),
       body: SingleChildScrollView(
         child: Column(
           children: [
-            SizedBox(
-              width: double.infinity,
-              height: 200,
-              child: Row(
-                children: [
-                  AppSpace.sizedW20,
-                  const Text(
-                    AppText.welcomeTextName,
-                    style: AppTextStyles.poppinsText24w600,
-                  ),
-                  AppSpace.sizedW70,
-                  Image.asset(
-                    'assets/images/bala_kitep.png',
-                  ),
-                ],
-              ),
+            Row(
+              children: [
+                AppSpace.sizedW20,
+                const Text(
+                  AppText.welcomeTextName,
+                  style: AppTextStyles.poppinsText24w600,
+                ),
+                AppSpace.sizedW70,
+                Image.asset(
+                  'assets/images/bala_kitep.png',
+                ),
+              ],
             ),
             Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 20),
+              padding: const EdgeInsets.symmetric(horizontal: 18),
+              child: AppTextFormFieldWidget(
+                controller: controller,
+                obscureText: false,
+                prefixixIcon: const Icon(Icons.search),
+                contentPadding: const EdgeInsets.symmetric(
+                  vertical: 7,
+                ),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.circular(12),
+                ),
+              ),
+            ),
+            const SizedBox(
+              height: 20,
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(
+                horizontal: 18,
+              ),
               child: Column(
                 children: [
                   DecoratedBox(
@@ -43,12 +60,11 @@ class HomeView extends StatelessWidget {
                       borderRadius: BorderRadius.circular(10),
                     ),
                     child: Padding(
-                      padding: const EdgeInsets.all(10),
+                      padding: const EdgeInsets.all(12),
                       child: Row(
-                        mainAxisAlignment: MainAxisAlignment.spaceAround,
+                        // mainAxisAlignment: MainAxisAlignment.spaceAround,
                         children: [
                           Expanded(
-                            flex: 2,
                             child: Image.asset(
                               'assets/images/baldar.png',
                               width: 150,
@@ -59,6 +75,7 @@ class HomeView extends StatelessWidget {
                             child: Text(
                               AppText.containerText,
                               style: AppTextStyles.poppinsText24w600,
+                              textAlign: TextAlign.center,
                             ),
                           ),
                         ],
@@ -139,6 +156,5 @@ class HomeView extends StatelessWidget {
         ),
       ),
     );
-
   }
 }

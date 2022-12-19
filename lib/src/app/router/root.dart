@@ -42,6 +42,9 @@ class _RootLayoutState extends State<RootLayout> {
             .toList(),
         selectedIndex: widget.selectedIndex,
         onDestinationSelected: onDestinationSelected,
+        backgroundColor: Colors.white,
+        height: 65,
+        surfaceTintColor: Colors.red,
       ),
     );
   }

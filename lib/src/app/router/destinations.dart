@@ -2,23 +2,23 @@ import 'package:flutter/material.dart';
 
 const List<NavigationDestination> destinations = [
   NavigationDestination(
-    label: 'Уй',
-    icon: Icon(Icons.home_outlined),
+    label: 'Yй',
+    icon: Icon(Icons.home),
     route: '/',
   ),
   NavigationDestination(
     label: 'Категориялар',
-    icon: Icon(Icons.mail_outlined),
-    route: '/menu',
+    icon: Icon(Icons.view_quilt),
+    route: '/category',
   ),
   NavigationDestination(
     label: 'Жомок',
-    icon: Icon(Icons.abc),
-    route: '/menu',
+    icon: Icon(Icons.library_books),
+    route: '/jomok',
   ),
   NavigationDestination(
     label: 'Меню',
-    icon: Icon(Icons.person_outline),
+    icon: Icon(Icons.menu),
     route: '/menu',
   ),
 ];
