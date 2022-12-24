@@ -1,3 +1,5 @@
+import 'package:flutter/material.dart';
+
 class AppText {
   AppText._init();
 
@@ -10,7 +12,7 @@ class AppText {
   static const String containerMenu4 = 'Сабактар';
   static const String containerMenu5 = 'Макалдар';
   static const String containerMenu6 = 'Табышмактар';
-    // jomoktor
+  // jomoktor
   static const String jomoktor = 'Жомоктор';
   static const String akylduubala = 'Акылдуу бала';
   static const String altynkush = 'Алтын күш ';
@@ -29,3 +31,27 @@ class AppText {
   static const String akmenenkara = 'Ак көңүл менен кара көңүл';
   static const String padyshnyn = 'Падышанын буйругу';
 }
+
+List<String> appText = [
+  AppText.akylduubala,
+  AppText.altynkush,
+  AppText.chypalakbala,
+  AppText.tulkuturna,
+  AppText.bulbul,
+  AppText.myshykchychkan,
+  AppText.jyldyzdar,
+  AppText.kalpaktahyxy,
+  AppText.yrys,
+  AppText.topusun,
+  AppText.buguene,
+  AppText.komuz,
+  AppText.akylkarachach,
+  AppText.abyshkadoo,
+  AppText.akmenenkara,
+  AppText.padyshnyn,
+];
+List imgList = [  
+    Image.asset('Images/S1.png'),
+    Image.asset('Images/S3.png'),
+    Image.asset('Images/S2.png'),
+  ];
