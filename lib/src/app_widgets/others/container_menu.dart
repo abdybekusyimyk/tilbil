@@ -15,28 +15,28 @@ class ContainerMenu extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Expanded(
-      child: Container(
-        child: DecoratedBox(
-          decoration: BoxDecoration(
-            color: Colors.white,
-            borderRadius: BorderRadius.circular(10),
-            border: Border.all(color: const Color(0xFF85D9FD)),
-          ),
-          child: Padding(
-            padding: const EdgeInsets.all(15),
-            child: Column(
-              children: [
-                Image.asset(
-                  imageName,
-                  height: 80,
-                ),
-                AppSpace.sized5,
-                Text(
-                  name,
-                  style: style,
-                ),
-              ],
-            ),
+      child: DecoratedBox(
+        decoration: BoxDecoration(
+          color: Colors.white,
+          borderRadius: BorderRadius.circular(10),
+          border: Border.all(color: const Color(0xFF85D9FD)),
+        ),
+        child: Padding(
+          padding: const EdgeInsets.all(15),
+          child: Column(
+            children: [
+              Image.asset(
+                imageName,
+                width: 80,
+                height: 80,
+              ),
+              AppSpace.sized5,
+              Text(
+                name,
+                style: style,
+                textAlign: TextAlign.center,
+              ),
+            ],
           ),
         ),
       ),

@@ -11,7 +11,7 @@ class AppTextStyles {
     fontWeight: FontWeight.w600,
   );
   static const TextStyle poppinsText24w600 = TextStyle(
-    fontSize: 20,
+    fontSize: 16,
     color: Color(0xFF0E5EA3),
     // fontWeight: FontWeight.w600,
     fontFamily: 'CormorantInfant',

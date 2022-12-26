@@ -10,7 +10,7 @@ class AppText {
   static const String containerMenu4 = 'Сабактар';
   static const String containerMenu5 = 'Макалдар';
   static const String containerMenu6 = 'Табышмактар';
-    // jomoktor
+  // jomoktor
   static const String jomoktor = 'Жомоктор';
   static const String akylduubala = 'Акылдуу бала';
   static const String altynkush = 'Алтын күш ';
@@ -28,4 +28,14 @@ class AppText {
   static const String abyshkadoo = 'Абышка менен дөө';
   static const String akmenenkara = 'Ак көңүл менен кара көңүл';
   static const String padyshnyn = 'Падышанын буйругу';
+  // categoty
+  static const String tamgalar = 'Тамгалар';
+  static const String sandar = 'Сандар';
+  static const String yijanybarlar = 'Үй жаныбарлары';
+  static const String tokoijanybaarlar = 'Токой жаныбарлары';
+  static const String unaalar = 'Унаалар';
+  static const String denemycholor = 'Дене мүчөлөр';
+  static const String yibulo = 'Үй бүлө';
+  static const String jerjemishter = 'Жер жемиштер';
+  static const String momojemishter = 'Мөмө жемиштер';
 }

@@ -10,7 +10,7 @@ class FairyTalesDetailPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) => FairyTalseDatailCubit(),
-      child: FairyTalesDetailView(),
+      child: const FairyTalesDetailView(),
     );
   }
 }

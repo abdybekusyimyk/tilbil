@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:go_router/go_router.dart';
 import 'package:tilbil/src/app/router/root.dart';
+import 'package:tilbil/src/modules/authentication/authentication.dart';
 import 'package:tilbil/src/modules/category/view/category_page.dart';
+import 'package:tilbil/src/modules/category_detail/yijanybarlar/view/janybarlar_detail/view/janybarlar_detail_page.dart';
+import 'package:tilbil/src/modules/category_detail/yijanybarlar/view/yijanybarlar_page.dart';
 import 'package:tilbil/src/modules/fairy_tales/view/fairy_tales_page.dart';
 import 'package:tilbil/src/modules/home/home.dart';
 import 'package:tilbil/src/modules/menu/view/menu_page.dart';
@@ -21,7 +24,9 @@ class AppRouter {
           child: RootLayout(
             key: scaffoldKey,
             selectedIndex: 0,
-            child: HomePage(),
+            // child: HomePage(),
+            // child: YijanybarlarPage(),
+            child: JanybarlarDetailPage(),
           ),
         ),
       ),
