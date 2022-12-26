@@ -10,8 +10,10 @@ class FairyTalesView extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: const Text("kfnwrorbg"),
+    return const Scaffold(
+      body: Center(
+        child: Text('Jomok Page'),
+      ),
       // body: SafeArea(
       // child: ListView(
       //   padding: const EdgeInsets.all(8),

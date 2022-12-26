@@ -10,7 +10,7 @@ class CategoryPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return BlocProvider(
       create: (context) => CategoryCubit(),
-      child: const CategoryView(),
+      child: CategoryView(),
     );
   }
 }

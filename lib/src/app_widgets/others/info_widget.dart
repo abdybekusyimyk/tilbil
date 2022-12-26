@@ -30,7 +30,7 @@ class InfoWidget extends StatelessWidget {
           ),
         ),
         const DiviLine(
-          color: AppColors.black,
+          color: AppColors.blueT,
           thickness: 1.2,
         )
       ],

@@ -15,7 +15,7 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: const Color(0xFFe2fdfd),
-      body: SingleChildScrollView(
+      body: SafeArea(
         child: Column(
           children: [
             Row(
@@ -33,21 +33,22 @@ class HomeView extends StatelessWidget {
             ),
             Padding(
               padding: const EdgeInsets.symmetric(horizontal: 18),
-              child: AppTextFormFieldWidget(
-                controller: controller,
-                obscureText: false,
-                prefixixIcon: const Icon(Icons.search),
-                contentPadding: const EdgeInsets.symmetric(
-                  vertical: 7,
-                ),
-                border: OutlineInputBorder(
-                  borderRadius: BorderRadius.circular(12),
+              child: SizedBox(
+                height: 40,
+                child: AppTextFormFieldWidget(
+                  controller: controller,
+                  obscureText: false,
+                  prefixixIcon: const Icon(Icons.search),
+                  contentPadding: const EdgeInsets.symmetric(
+                    vertical: 1,
+                  ),
+                  border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(12),
+                  ),
                 ),
               ),
             ),
-            const SizedBox(
-              height: 20,
-            ),
+            AppSpace.sized15,
             Padding(
               padding: const EdgeInsets.symmetric(
                 horizontal: 18,
@@ -82,7 +83,7 @@ class HomeView extends StatelessWidget {
                       ),
                     ),
                   ),
-                  AppSpace.sized15,
+                  AppSpace.sized10,
                   SizedBox(
                     child: Row(
                       mainAxisAlignment: MainAxisAlignment.center,
@@ -101,7 +102,7 @@ class HomeView extends StatelessWidget {
                       ],
                     ),
                   ),
-                  AppSpace.sized30,
+                  AppSpace.sized20,
                   Column(
                     children: [
                       Row(
@@ -111,13 +112,13 @@ class HomeView extends StatelessWidget {
                             name: AppText.containerMenu1,
                             style: AppTextStyles.poppinsText14w600,
                           ),
-                          AppSpace.sizedW15,
+                          AppSpace.sizedW10,
                           ContainerMenu(
                             imageName: 'assets/images/janylmachtar.png',
                             name: AppText.containerMenu2,
                             style: AppTextStyles.poppinsText12w600,
                           ),
-                          AppSpace.sizedW15,
+                          AppSpace.sizedW10,
                           ContainerMenu(
                             imageName: 'assets/images/yrlar.png',
                             name: AppText.containerMenu3,
@@ -125,7 +126,7 @@ class HomeView extends StatelessWidget {
                           ),
                         ],
                       ),
-                      AppSpace.sized15,
+                      AppSpace.sized10,
                       Row(
                         children: const [
                           ContainerMenu(
@@ -133,13 +134,13 @@ class HomeView extends StatelessWidget {
                             name: AppText.containerMenu4,
                             style: AppTextStyles.poppinsText14w600,
                           ),
-                          AppSpace.sizedW15,
+                          AppSpace.sizedW10,
                           ContainerMenu(
                             imageName: 'assets/images/makaldar.png',
                             name: AppText.containerMenu5,
                             style: AppTextStyles.poppinsText14w600,
                           ),
-                          AppSpace.sizedW15,
+                          AppSpace.sizedW10,
                           ContainerMenu(
                             imageName: 'assets/images/tabyshmak.png',
                             name: AppText.containerMenu6,

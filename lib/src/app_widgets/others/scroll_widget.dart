@@ -10,8 +10,8 @@ class ScrollWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      width: 8,
-      height: 8,
+      width: 6,
+      height: 6,
       decoration: BoxDecoration(
         color: isCheck ? const Color(0xFF68c052) : const Color(0xFFd9d9d9),
         borderRadius: BorderRadius.circular(20),
