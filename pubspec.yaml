@@ -35,6 +35,12 @@ flutter:
   assets:
    - assets/images/
    - assets/icons/
+  fonts:
+    - family: Raleway
+      fonts:
+        - asset: fonts/Cormorant_Infant/CormorantInfant-Italic.ttf
+          weight: 700
+          
 
 
 
