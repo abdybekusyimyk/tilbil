@@ -9,6 +9,8 @@ import 'package:tilbil/src/modules/fairy_tales/view/fairy_tales_page.dart';
 import 'package:tilbil/src/modules/home/home.dart';
 import 'package:tilbil/src/modules/menu/view/menu_page.dart';
 
+import '../../modules/fairy_tales/fairy_tales_detail/view/fairy_tales_detail_view.dart';
+
 const pageKey = ValueKey('_pageKey');
 const scaffoldKey = ValueKey('_scaffoldKey');
 
@@ -26,7 +28,7 @@ class AppRouter {
             selectedIndex: 0,
             // child: HomePage(),
             // child: YijanybarlarPage(),
-            child: JanybarlarDetailPage(),
+            child: FairyTalesDetailView(),
           ),
         ),
       ),
