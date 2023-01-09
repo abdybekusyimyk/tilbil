@@ -39,3 +39,21 @@ class AppText {
   static const String jerjemishter = 'Жер жемиштер';
   static const String momojemishter = 'Мөмө жемиштер';
 }
+List<String> appText = [
+  AppText.akylduubala,
+  AppText.altynkush,
+  AppText.chypalakbala,
+  AppText.tulkuturna,
+  AppText.bulbul,
+  AppText.myshykchychkan,
+  AppText.jyldyzdar,
+  AppText.kalpaktahyxy,
+  AppText.yrys,
+  AppText.topusun,
+  AppText.buguene,
+  AppText.komuz,
+  AppText.akylkarachach,
+  AppText.abyshkadoo,
+  AppText.akmenenkara,
+  AppText.padyshnyn,
+];
