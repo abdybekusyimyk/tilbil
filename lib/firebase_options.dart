@@ -70,7 +70,8 @@ class DefaultFirebaseOptions {
     messagingSenderId: '1022532656951',
     projectId: 'tilbil-92a49',
     storageBucket: 'tilbil-92a49.appspot.com',
-    iosClientId: '1022532656951-nn1jktcda28h8f4hfdjeb7mjrbbjqqek.apps.googleusercontent.com',
+    iosClientId:
+        '1022532656951-nn1jktcda28h8f4hfdjeb7mjrbbjqqek.apps.googleusercontent.com',
     iosBundleId: 'com.tilbil.org.tilbil',
   );
 }
