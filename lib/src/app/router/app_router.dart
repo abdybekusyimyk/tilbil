@@ -24,9 +24,9 @@ class AppRouter {
           child: RootLayout(
             key: scaffoldKey,
             selectedIndex: 0,
-            // child: HomePage(),
+            child: HomePage(),
             // child: YijanybarlarPage(),
-            child: JanybarlarDetailPage(),
+            // child: JanybarlarDetailPage(),
           ),
         ),
       ),
