@@ -29,7 +29,7 @@ class JanybarlarDetailView extends StatelessWidget {
             Image.asset(
               'assets/images/too.png',
             ),
-           const Text(
+            const Text(
               "Took",
               style: TextStyle(fontSize: 60),
             ),

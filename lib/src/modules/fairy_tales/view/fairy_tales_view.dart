@@ -24,8 +24,7 @@ class FairyTalesView extends StatelessWidget {
               shrinkWrap: true,
               itemCount: appText.length,
               prototypeItem: ListTile(
-                title: Text(appText.first), 
-              
+                title: Text(appText.first),
               ),
               itemBuilder: (BuildContext context, index) {
                 return ListTile(
